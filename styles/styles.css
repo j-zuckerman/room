@@ -1,0 +1,139 @@
+:root {
+  box-sizing: border-box;
+  --gray: hsl(0, 0%, 63%);
+  --dark-gray: hsl(0, 0%, 27%);
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Spartan', sans-serif;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+p {
+  color: var(--gray);
+  line-height: 1rem;
+  margin-bottom: 1rem;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  width: 100%;
+}
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
+
+.active {
+  display: inline-flex;
+}
+
+.main-nav li {
+  margin-top: 10px;
+}
+
+.nav-links {
+  color: white;
+}
+
+.active {
+  display: block;
+}
+
+.slide {
+  flex-wrap: wrap;
+  display: none;
+}
+
+.slide-img {
+  width: 60%;
+  height: auto;
+}
+
+.slide-desc {
+  flex: 1;
+  position: relative;
+}
+
+.slide-desc__text {
+  max-width: 400px;
+  margin: auto;
+}
+
+.slide h4 {
+  margin-top: 4rem;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.slide p {
+  margin-bottom: 3.5rem;
+}
+
+.slide a {
+  font-size: 1.1rem;
+
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+}
+
+.slide a:hover {
+  color: var(--gray);
+}
+
+.arrows {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.arrow {
+  background-color: black;
+  margin-bottom: 0;
+}
+
+.arrow:hover {
+  background-color: var(--dark-gray);
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-desc {
+  flex-grow: 1;
+}
+.about-desc div {
+  max-width: 400px;
+  margin: auto;
+}
+
+.about-desc div h6 {
+  margin-top: 3.5rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: 1.5rem;
+}
