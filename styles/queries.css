@@ -40,7 +40,7 @@
 
 @media only screen and (min-width: 600px) {
   html {
-    font-size: 14px;
+    font-size: 10px;
   }
 
   nav {
@@ -74,43 +74,44 @@
   }
 
   .slide-img {
-    width: 100%;
+    width: 60%;
     height: auto;
   }
 
   .slide-desc__text {
-    max-width: 60%;
+    max-width: 250px;
     margin-bottom: 3rem;
   }
 
   .about img {
-    width: 100%;
+    max-width: 30%;
     height: auto;
   }
 
   .about-desc div {
-    max-width: 60%;
+    max-width: 250px;
     margin-bottom: 3rem;
   }
 
   .arrow {
-    padding: 1.25rem 1.75rem;
+    padding: 1rem 1.5rem;
   }
+
   .arrows {
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: absolute;
-    bottom: auto;
-    left: auto;
-    top: -65px;
-    right: 0px;
+    bottom: 0;
+    left: 0;
+    top: auto;
+    right: auto;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   html {
-    font-size: 13px;
+    font-size: 12px;
   }
   .slide-img {
     width: 60%;
@@ -130,16 +131,5 @@
   .about-desc div {
     max-width: 400px;
     margin-bottom: 3rem;
-  }
-
-  .arrows {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    top: auto;
-    right: auto;
   }
 }
